@@ -10,14 +10,15 @@
     <div id="app" v-cloak>
 
         <label for="" placeholder="Enter item">Enter item</label>
-        <input type="text" />
+        <h1>{{ item }}</h1>
+        <input type="text" v-model="item" />
         <hr />
 
         <ul>
             <li></li>
         </ul>
 
-        <button>Add Item</button>
+        <button @click="testButton">Add Item</button>
 
     </div>
 
